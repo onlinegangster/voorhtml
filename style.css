@@ -1,35 +1,93 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
   }
   
   header {
-    background-color: #333;
+    background-color: #2857af;
     color: white;
-    padding: 1rem;
+    padding: 15px;
   }
   
   header nav ul {
-    list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
   }
   
   header nav ul li {
     display: inline;
-    margin-right: 15px;
   }
   
   header nav ul li a {
     color: white;
-    text-decoration: none;
   }
   
   footer {
-    background-color: #333;
+    background-color:#2857af;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 10px;
+    
+  }
+  
+  main {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .products article {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #385eb3;
+    border-radius: 5px;
+  }
+  
+  #display-invis {
+  display: none;
+  }
+
+  @media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+    }
+  }
+
+  button:hover {
+    background-color: #555;
+    color: white;
+    transition: background-color 0.3s;
+  }
+
+  body {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
   }
   

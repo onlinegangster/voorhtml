@@ -7,31 +7,61 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header>
-    <h1>Welkom bij WEYN</h1> 
     <nav>
       <ul>
-        <li><a href="website.html">Home</a></li>
+        <!-- links voor de verschillende paginas -->
+        <li><a href="index.html"><b>WEYN</b></a></li>
         <li><a href="phones.html">Telefoons</a></li>
         <li><a href="computers.html">Computers</a></li>
         <li><a href="contact.html">Contact</a></li>
+        
+        <!-- zoekbalk -->
+        <li>
+          <input type="text" placeholder="Zoek naar producten..." id="search-bar">
+          <button id="search-btn">Zoek</button>
+        </li>
       </ul>
     </nav>
-    <section>
-      <input type="text" placeholder="Zoek naar producten..." id="search-bar">
-      <button id="search-btn">Zoek</button>
-    </section>
-    <script src="js/script.js"></script>
-    
   </header>
+
+
   <main>
     <section>
-      <h2>Ontdek de nieuwste technologie</h2>
-      <p>Bekijk onze innovatieve telefoons en krachtige computers.</p>
+      <h2>Onze Populaire Producten</h2>
+      <div class="products">
+        <article>
+          <h3>weynphone X</h3>
+          <p>Krachtige prestaties en een baanbrekend ontwerp</p>
+        </article>
+        <article>
+          <h3>Laptop Pro</h3>
+          <p>Voor professionals die topkwaliteit eisen</p>
+        </article>
+      </div>
     </section>
+
+    <section>
+      <h2>Nieuwste Producten</h2>
+      <div class="products">
+        <article>
+          <h3>weynphone y</h3>
+          <p>De nieuwste opvouwbare telefoon</p>
+        </article>
+        <article>
+          <h3>Laptop Ultra</h3>
+          <p>Perfect voor gamers die het beste willen</p>
+        </article>
+      </div>
+    </section>    
   </main>
+
+
   <footer>
-    <p>&copy; 2024 WEYN. Alle rechten voorbehouden.</p>
-  </footer>  
+    <p>Copyright© 1995-2025 WEYN. Alle Rechten voorbehouden.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
